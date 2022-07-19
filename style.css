@@ -71,7 +71,7 @@ body {
     align-items: center;
   }
 
-  .profile {
+  .bottom .profile {
     display: flex;
     align-items: center;
     gap: 0.5rem;
@@ -94,7 +94,7 @@ body {
   }
 
   .activity a:hover {
-    background-color: #e2e8f0;
+    background-color: #0284c7b3;
   }
   .sidebar {
     display: grid;
@@ -152,10 +152,66 @@ body {
     background: white;
     border-radius: 13px;
   }
+  .projects > h3 {
+    grid-column: 1 / -1;
+    margin: 0;
+    font-size: 1.5rem;
+    margin-bottom: -1.5rem;
+  }
 
+  .project .block {
+    grid-row: 1 / -1;
+    background-color:#0284c7;
+    border-radius: 20px 0 0 20px;
+    width: 75%;
+  }
+
+  .project .project-title {
+    padding: 1rem 1rem 0;
+  }
+
+  .project .project-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    padding: 1.5rem;
+
+  }
   .content .side-content {
     display: grid;
     grid-template-rows: 1fr 1fr;
     gap: 1rem;
   }
 
+  .side-content .announcements {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 1rem 2rem;
+    background: white;
+    border-radius: 13px;
+  }
+
+  .announcements .border {
+    background-color: #0284c7;
+    width: 100%;
+    height: 1px;
+  }
+  .side-content .trending {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 1rem 2rem;
+    background: white;
+    border-radius: 13px;
+  }
+
+  .side-content .trending .profile {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  
