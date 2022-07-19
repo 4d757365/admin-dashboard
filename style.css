@@ -5,7 +5,6 @@
 }
 
 body {
-    min-height: 100vh;
     margin: 0;
     padding: 0;
   }
@@ -14,6 +13,7 @@ body {
   .container {
     display: grid;
     grid-template: auto 4fr / 1fr 4fr;
+    height: 100vh;
 
   }
   /* .container div {
@@ -24,13 +24,78 @@ body {
     color: white;
   } */
   .header {
-    display: grid;
-    grid-template: auto 1fr / 2fr 1fr;
+    /* display: grid;
+    grid-template: auto 1fr / 2fr 1fr; */
     background-color: #fafafa;
     padding: 0.5rem 2rem;
 
   }
 
+  .top {
+    display: grid;
+    grid-template-columns: 1fr max-content;
+    margin-bottom: 2.5rem;
+    padding-top: 1.5rem;
+  }
+
+  .top .search {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+    width: 100%;
+  }
+  
+  input[type="search"] {
+    display: inline-block;
+    border: 0;
+    background-color: #e2e8f0;
+    padding: 0.75em 2em;
+    outline-color: #0284c7;
+    margin-left: 1.25rem;
+    border-radius: 99em;
+    width: min(80%, 700px);
+  }
+
+  .top .admin {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: 800;
+    gap: 2rem;
+  }
+
+  .bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .profile {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.5rem;
+  }
+
+  .activity {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 2rem;
+  }
+  .activity a {
+    background-color: #0284c7;
+    color: #fafaf9;
+    font-weight: 700;
+    padding: 0.75em 2.3em;
+    border-radius: 99em;
+
+  }
+
+  .activity a:hover {
+    background-color: #e2e8f0;
+  }
   .sidebar {
     display: grid;
     grid-area: 1 / 1 / -1 / 2;
@@ -38,8 +103,33 @@ body {
     color: white;
     background-color: #0284c7;
     padding: 1rem;
+    gap: 5rem;
   }
 
+  .side-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .side-head {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .side-button a{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
   .content {
     display: grid;
     grid-template-columns: 3fr 1fr;
